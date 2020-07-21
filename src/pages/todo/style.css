@@ -1,0 +1,72 @@
+.todo-info{
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+    position: relative;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+/* borda da tela */
+.todo-info article{
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* modifica a descricao*/
+.todo-info article p{
+    font-size: 16px;
+    color: #999999;
+    line-height: 24px;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* configuracao de botoes */
+.todo-info article a{
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #324A5F;
+    background: none;
+    margin-top: 10px;
+    color: #324A5F;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+/* efeito de transicao da cor dos botoes */
+.todo-info article a:hover{
+    background: #324A5F;
+    color: #ffffff
+}
+
+/*sobrescrevendo a cor dos botoes para amarelo*/
+.todo-info article .atualizar-dado a{
+    border: 2px solid #FF9505;
+    color: #FF9505;
+}
+/* sobrescreve o efeito de transicao da cor dos botoes pra amarelo*/
+.todo-info article .atualizar-dado a:hover{
+    background: #FF9505;
+    color: #ffffff
+}
+/*sobrescrevendo a cor dos botoes para vermelho*/
+.todo-info article .apagar-dado a{
+    border: 2px solid #BD1E1E;
+    color: #BD1E1E;
+}
+/* sobrescreve o efeito de transicao da cor dos botoes pra vermelho*/
+.todo-info article .apagar-dado a:hover{
+    background: #BD1E1E;
+    color: #ffffff
+}
