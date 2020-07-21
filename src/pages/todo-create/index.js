@@ -1,4 +1,4 @@
-import React, { Component} from "react"
+import React, { Component } from "react"
 import Api from "../../services/api"
 import "./style.css"
 import {Link} from "react-router-dom"
@@ -24,7 +24,7 @@ export default class TodoCreate extends Component{
         this.setState({
             title: event.target.value,
         });
-      }
+    }
 
     // metodo pra observar mudancas na descricao
     descriptionChange(event) {

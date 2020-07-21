@@ -1,4 +1,4 @@
-import React, { Component} from "react"
+import React, { Component } from "react"
 import Api from "../../services/api"
 import "./style.css"
 import {Link} from "react-router-dom"
