@@ -1,17 +1,15 @@
 import React from "react"
 import {BrowserRouter, Switch, Route} from "react-router-dom"
-import Main from "../pages/main"
-import TodoCreate from "../pages/todo-create"
-import TodoUpdate from "../pages/todo-update"
-import Todo from "../pages/todo"
+import Login from "../pages/login"
+import Cadastro from "../pages/cadastro"
+import Home from "../pages/home"
 
 const Routes = () => (
     <BrowserRouter>
         <Switch>
-            <Route exact path="/" component={Main}/>
-            <Route path="/todo/store/" component={TodoCreate}/>
-            <Route path="/todo/show/:id" component={Todo}/>
-            <Route path="/todo/update/:id" component={TodoUpdate}/>
+            <Route exact path="/" component={Login} />
+            <Route path="/cadastro" component={Cadastro} />
+            <Route path="/home" component={Home} />
         </Switch>
     </BrowserRouter>
 )
