@@ -1,15 +1,113 @@
-.login p{
-    margin-top: 30px;
-    font-size: 16px;
+.login{
+    max-width: 450px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+    position: relative;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+/* formatacao da imagem de login  */
+.login .logo img{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* borda da tela */
+.login article{
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 5%;
+    margin-bottom: 20px;
+}
+
+/* formatacao do campo email do form */
+.login article form input[type=text]{
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 2px solid #E6E6FA;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 12px 20px;
+    color: #808080;
+    background: #E6E6FA;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.login a{
-    margin-top: 20px;
-    font-size: 16px;
+/* formatacao do campo password do form */
+.login article form input[type=password]{
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 2px solid #E6E6FA;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 12px 20px;
+    color: #808080;
+    background: #E6E6FA;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* formatacao do botao do form */
+.login article form input[type=submit]{
+    width: 100%;
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #3CB371;
+    background: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    background: #3CB371;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* formatacao da cor da transicao do botao do form */
+.login article form input[type=submit]:hover{
+    background: #2E8B57;
+    border: #2E8B57;
+}
+
+/* formatacao do link de cadastro */
+.login article a{
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: #808080;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    transition: all 0.2s;
+}
+
+.login article a:hover{
+    color: #333333;
 }
