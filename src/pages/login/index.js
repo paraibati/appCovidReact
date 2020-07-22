@@ -20,11 +20,6 @@ export default class Login extends Component{
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-    // metodo pra preencher o objeto todo
-    // componentDidMount(){
-
-    // }
-
     emailChange(event){
         this.setState({
             email: event.target.value
@@ -66,9 +61,6 @@ export default class Login extends Component{
                         <Link to={"/cadastro"}>Você ainda não tem uma conta?<br></br>Clique aqui para criar uma agora!</Link>
                     </form>    
                 </article>
-                {/* <p>Login</p>
-                <Link to={"/cadastro"}>Cadastro</Link>
-                <Link to={"/home"}>Home</Link> */}
             </div>
         )
     }
