@@ -55,8 +55,8 @@ export default class Login extends Component{
                 </div>
                 <article>
                     <form onSubmit={this.handleSubmit}>
-                        <input type="text" placeholder="Seu e-mail" value={this.state.value} onChange={this.emailChange}/>
-                        <input type="password" placeholder="Sua senha" value={this.state.value} onChange={this.passwordChange}/>
+                        <input type="email" placeholder="Seu e-mail" value={this.state.value} onChange={this.emailChange}/>
+                        <input type="password" minLength="8" placeholder="Sua senha" value={this.state.value} onChange={this.passwordChange}/>
                         <input type="submit" value="Acessar"/>
                         <Link to={"/cadastro"}>Você ainda não tem uma conta?<br></br>Clique aqui para criar uma agora!</Link>
                     </form>    

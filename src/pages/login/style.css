@@ -29,7 +29,7 @@
 }
 
 /* formatacao do campo email do form */
-.login article form input[type=text]{
+.login article form input[type=email]{
     width: 100%;
     height: 35px;
     font-size: 15px;

@@ -64,11 +64,11 @@ export default class Cadastro extends Component{
                 <article>
                     <form onSubmit={this.handleSubmit}>
                         <input type="text" placeholder="Nome Completo" value={this.state.value} onChange={this.nameChange}/>
-                        <input type="text" placeholder="Seu e-mail" value={this.state.value} onChange={this.emailChange}/>
-                        <input type="password" placeholder="Sua senha" value={this.state.value} onChange={this.passwordChange}/>
+                        <input type="email" placeholder="Seu e-mail" value={this.state.value} onChange={this.emailChange}/>
+                        <input type="password" minLength="8" placeholder="Sua senha" value={this.state.value} onChange={this.passwordChange}/>
                         <input type="submit" value="Criar conta"/>
                         <Link to={"/"}>Já tenho uma conta</Link>
-                    </form>    
+                    </form>
                 </article>
             </div>
         )
